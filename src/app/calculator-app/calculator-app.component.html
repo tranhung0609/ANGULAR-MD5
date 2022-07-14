@@ -1,0 +1,26 @@
+
+
+<label>
+  Số thứ nhất:
+  <br>
+  <br>
+  <input class="form-control" type="number" [(ngModel)]="number1">
+</label>
+<br>
+<br>
+<label>
+  Số thứ hai:
+  <br>
+  <br>
+  <input class="form-control" type="number" [(ngModel)]="number2">
+</label>
+<br>
+<br>
+<button (click)="sum(number1,number2)">Cộng</button>
+<button (click)="tru(number1,number2)">Trừ</button>
+<button (click)="nhan(number1,number2)">Nhân</button>
+<button (click)="chia(number1,number2)">Chia</button>
+<br>
+<br>
+<h3>Result : {{result}}</h3>
+
