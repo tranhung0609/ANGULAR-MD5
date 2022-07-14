@@ -8,6 +8,8 @@ import { PetComponent } from './pet/pet.component';
 import { ShowProductListComponent } from './show-product-list/show-product-list.component';
 import { CalculatorAppComponent } from './calculator-app/calculator-app.component';
 import { ColorPickerComponent } from './color-picker/color-picker.component';
+import { HackkerNewComponent } from './hackker-new/hackker-new.component';
+import { LikeComponent } from './like/like.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { ColorPickerComponent } from './color-picker/color-picker.component';
     PetComponent,
     ShowProductListComponent,
     CalculatorAppComponent,
-    ColorPickerComponent
+    ColorPickerComponent,
+    HackkerNewComponent,
+    LikeComponent
   ],
     imports: [
         BrowserModule,
