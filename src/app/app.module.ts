@@ -12,6 +12,8 @@ import { HackkerNewComponent } from './hackker-new/hackker-new.component';
 import { LikeComponent } from './like/like.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { NameCardComponent } from './name-card/name-card.component';
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { FooterComponent } from './footer/footer.component';
     HackkerNewComponent,
     LikeComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    NameCardComponent,
+    ProgressBarComponent
   ],
     imports: [
         BrowserModule,
