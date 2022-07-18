@@ -17,6 +17,9 @@ import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { CountdountComponent } from './countdount/countdount.component';
 import { TimelinesComponent } from './timelines/timelines.component';
 import { FormLoginComponent } from './form-login/form-login.component';
+import { DictionaryComponent } from './dictionary/dictionary.component';
+import { PlaylistComponent } from './youtube-player/playlist.component';
+import { YoutubePlaylistComponent } from './youtube-playlist/youtube-playlist.component';
 
 
 @NgModule({
@@ -34,7 +37,10 @@ import { FormLoginComponent } from './form-login/form-login.component';
     ProgressBarComponent,
     CountdountComponent,
     TimelinesComponent,
-    FormLoginComponent
+    FormLoginComponent,
+    DictionaryComponent,
+    PlaylistComponent,
+    YoutubePlaylistComponent
   ],
     imports: [
         BrowserModule,
