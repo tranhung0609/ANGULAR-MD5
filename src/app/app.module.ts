@@ -14,6 +14,10 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { NameCardComponent } from './name-card/name-card.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
+import { CountdountComponent } from './countdount/countdount.component';
+import { TimelinesComponent } from './timelines/timelines.component';
+import { FormLoginComponent } from './form-login/form-login.component';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +31,10 @@ import { ProgressBarComponent } from './progress-bar/progress-bar.component';
     NavbarComponent,
     FooterComponent,
     NameCardComponent,
-    ProgressBarComponent
+    ProgressBarComponent,
+    CountdountComponent,
+    TimelinesComponent,
+    FormLoginComponent
   ],
     imports: [
         BrowserModule,
