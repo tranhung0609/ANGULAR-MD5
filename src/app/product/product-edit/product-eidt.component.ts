@@ -42,7 +42,7 @@ export class ProductEidtComponent implements OnInit {
   updateProduct() {
     const product = this.productForm.value;
     console.log(product)
-    this.productService.updateProduct(this.productForm.value.id, product);
+    this.productService.update(this.productForm.value.id, product);
     alert('Cập nhật thành công');
     // @ts-ignore
     $("#exampleModal").modal("hide");
