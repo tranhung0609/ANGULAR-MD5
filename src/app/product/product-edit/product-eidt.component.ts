@@ -44,7 +44,13 @@ export class ProductEidtComponent implements OnInit {
     console.log(product)
     this.productService.updateProduct(this.productForm.value.id, product);
     alert('Cập nhật thành công');
+    // @ts-ignore
+    $("#exampleModal").modal("hide");
     this.router.navigate(['/product/list'])
+
+
+
+
   }
 
 }
