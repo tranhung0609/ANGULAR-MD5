@@ -6,11 +6,17 @@ import {AppComponent} from './app.component';
 import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import { ListPostComponent } from './components/list-post/list-post.component';
+import { CreatePostComponent } from './components/create-post/create-post.component';
+import { EditPostComponent } from './components/edit-post/edit-post.component';
+import { DeletePostComponent } from './components/delete-post/delete-post.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListPostComponent,
+    CreatePostComponent,
+    EditPostComponent,
+    DeletePostComponent,
 
   ],
   imports: [

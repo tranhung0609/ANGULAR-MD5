@@ -14,4 +14,21 @@ export class PostService {
     return this.httpClient.get<Post[]>(API_URL)
   }
 
+  // @ts-ignore
+  savePost(post){
+    this.savePost(post)
+  }
+
+  findById(id: string): Observable<Post> {
+    return this.httpClient.get<Post>(API_URL + `/${id}`);
+  }
+
+  deletePost(id: string): Observable<Post> {
+    return this.httpClient.delete<Post>(API_URL + `/${id}`);
+  }
+
+  updatePost(id: string, post: Post): Observable<Post> {
+    return this.httpClient.put<Post>(API_URL + `/${id}`, post);
+  }
+
 }

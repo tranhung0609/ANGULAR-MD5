@@ -1,32 +1,27 @@
-<p>list-post works!</p>
+
 <hr>
 <table class="table">
   <thead class="thead-dark">
   <tr>
     <th scope="col">#</th>
-    <th scope="col">First</th>
-    <th scope="col">Last</th>
-    <th scope="col">Handle</th>
+    <th scope="col">Content</th>
+    <th scope="col">CreateAt</th>
+    <th scope="col">Title</th>
+    <th scope="col">Image</th>
+    <th scope="col">Action</th>
   </tr>
   </thead>
   <tbody>
-  <tr>
-    <th scope="row">1</th>
-    <td>Mark</td>
-    <td>Otto</td>
-    <td>@mdo</td>
-  </tr>
-  <tr>
-    <th scope="row">2</th>
-    <td>Jacob</td>
-    <td>Thornton</td>
-    <td>@fat</td>
-  </tr>
-  <tr>
-    <th scope="row">3</th>
-    <td>Larry</td>
-    <td>the Bird</td>
-    <td>@twitter</td>
+  <tr *ngFor="let post of posts; index as i">
+    <th scope="row">{{i + 1}}</th>
+    <td>{{post.content}}</td>
+    <td>{{post.createAt | date:"dd-MM-yy"}}</td>
+    <td>{{post.title}}</td>
+    <td>{{post.image}}</td>
+    <td>
+      <button [routerLink]="['/posts/edit',post.id]" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Edit</button>
+      <button [routerLink]="['/posts/delete',post.id]" class="btn btn-danger">Delete</button>
+    </td>
   </tr>
   </tbody>
 </table>
