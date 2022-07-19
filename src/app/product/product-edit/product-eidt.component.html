@@ -1,25 +1,54 @@
-<h1>Cập nhật thông tin sản phẩm</h1>
-<form [formGroup]="productForm" (ngSubmit)="updateProduct(id)">
-  <table>
-    <tr>
-      <td>Mã sản phẩm:</td>
-      <td><input type="number" formControlName="id"></td>
-    </tr>
-    <tr>
-      <td>Tên sản phẩm:</td>
-      <td><input type="text" formControlName="name"></td>
-    </tr>
-    <tr>
-      <td>Giá sản phẩm</td>
-      <td><input type="number" formControlName="price"></td>
-    </tr>
-    <tr>
-      <td>Mô tả về sản phẩm</td>
-      <td><input type="text" formControlName="description"></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td><button>Cập nhật</button></td>
-    </tr>
-  </table>
-</form>
+<!--<h1>Cập nhật thông tin sản phẩm</h1>-->
+<!--<form [formGroup]="productForm" (ngSubmit)="updateProduct(id)">-->
+<!--  <table>-->
+<!--    <tr>-->
+<!--      <td>Mã sản phẩm:</td>-->
+<!--      <td><input type="number" formControlName="id"></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--      <td>Tên sản phẩm:</td>-->
+<!--      <td><input type="text" formControlName="name"></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--      <td>Giá sản phẩm</td>-->
+<!--      <td><input type="number" formControlName="price"></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--      <td>Mô tả về sản phẩm</td>-->
+<!--      <td><input type="text" formControlName="description"></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--      <td></td>-->
+<!--      <td><button>Cập nhật</button></td>-->
+<!--    </tr>-->
+<!--  </table>-->
+<!--</form>-->
+<!-- Button trigger modal-->
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Thêm sản phẩm</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form class="modal-body" [formGroup]="productForm" (ngSubmit)="updateProduct()">
+        <label>Mã sản phẩm</label>
+        <input type="hidden" class="form-control" placeholder="Mã sản phẩm" formControlName="id">
+        <label>Tên sản phẩm</label>
+        <input type="text" class="form-control" placeholder="Tên sản phẩm" formControlName="name">
+        <label>Giá sản phẩm</label>
+        <input type="text" class="form-control" placeholder="Giá sản phẩm" formControlName="price">
+        <label>Mô tả</label>
+        <input type="text" class="form-control" placeholder="Mô tả sản phẩm" formControlName="description">
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary">Edit</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
