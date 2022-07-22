@@ -23,5 +23,4 @@ export class ProductCreateComponent implements OnInit {
     this.productService.savePost(product);
     this.productForm.reset();
   }
-
 }

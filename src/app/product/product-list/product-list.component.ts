@@ -16,7 +16,7 @@ export class ProductListComponent implements OnInit {
   }
 
   getAll() {
-    this.productService.findAll().subscribe((products) => {
+    this.productService.findAll().subscribe((products: Product[]) => {
       this.products = products;
       console.log(products)
     }, error => {
